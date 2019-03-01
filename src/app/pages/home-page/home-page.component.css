@@ -1,0 +1,52 @@
+
+
+.sectionlist{
+    box-sizing: border-box;
+    position: relative;
+
+}
+.book-section-list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+.home-title{
+    position: relative;
+    border-bottom: 1px solid #ccc;
+    padding: 15px;
+}
+.home-title span{
+    position: absolute;
+    top: 10px;
+    display: block;
+    height: 26px;
+    width: 3px;
+    left:13px;
+    background: red;
+}
+h2{
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0;
+    font-weight: 500;
+    margin-left:10px;
+}
+
+.book-section-list>div{
+    width: 50vw;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.book-section-list>div>img{
+    width: 80%;
+    margin: auto;
+}
+.book-section-list>div>h4{
+    text-align: center;
+    height: 6vh;
+    line-height: 6vh;
+    color: red;
+    font-size: 14px;
+    font-weight: normal;
+}

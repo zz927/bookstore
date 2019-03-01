@@ -1,0 +1,14 @@
+span{
+    position: absolute;
+    left:20px;
+    color:white;
+    font-size: 20px; 
+    line-height: 8vh;
+    margin-left: 10px;
+}
+h2{
+    font-size: 20px;
+    margin: 0;
+    color: white;
+    line-height: 8vh;
+}

@@ -1,0 +1,40 @@
+
+.advert{
+    height: 42vw;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+.advert ul{
+    width: 400vw;
+    height: 100%;
+    position: absolute;
+    left:0;
+    list-style: none;
+    animation-name: MyteanslateX;
+    animation-duration: 13s;
+    animation-iteration-count: infinite;
+}
+.advert ul li{
+    float: left;
+    height: 100%;
+}
+.advert ul li img{
+    height: 100%;
+}
+@keyframes MyteanslateX {
+    0%,30%{
+        left: 0;
+    }
+    35%,65%{
+        left: -100vw;
+    }
+    70%,99%{
+        left: -200vw;
+    }
+    100%{
+        left: -300vw;
+    }
+  
+}
+

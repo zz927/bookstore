@@ -1,0 +1,42 @@
+.list-item-book{
+    display: flex;
+    flex-direction: row;
+    padding: 5px 3px;
+    position: relative;
+    border: 1px solid #ccc;
+    box-shadow: 5px 5px 5px #ccc;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.book-cover{
+    width: 32vw;
+}
+.book-cover img{
+    width: 100%;
+}
+.book-body{
+    flex: 1;
+}
+.book-body h4{
+    font-size: 16px;
+    font-weight: 600;
+}
+.book-body p{
+    color: #666666;
+}
+.price{
+    color: red;
+}
+.book-body .price{
+    color: red;
+}
+.add-cart{
+    position: absolute;
+    background: red;
+    right: 6px;
+    bottom: 6px;
+    padding: 6px;
+    color: white;
+    border-radius: 8px;
+}

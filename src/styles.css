@@ -1,0 +1,50 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+img{
+    display: block;
+}
+.padding-6{
+    padding:6px;
+}
+.page-head{
+    height:8vh;
+    background-color:red;
+    line-height: 8vh;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 500;
+}
+.page-content{
+    height: 84vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.page-nav{
+    height: 8vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+}
+.page-nav div{
+    flex: 1;
+    color: #333;
+    text-align: center;
+    outline: none;
+}
+.page-nav div span{
+   display:block;
+   line-height: 4vh;
+}
+.page-nav .active{
+    color: red;
+    outline: none;
+}
+

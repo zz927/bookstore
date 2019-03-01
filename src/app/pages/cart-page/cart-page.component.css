@@ -1,0 +1,41 @@
+.cart-book-list{
+    margin-top: 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    height: 15vh;
+    position: relative;
+    font-size: 18px;
+    display: flex;
+}
+.cart-left, .cart-right{
+    width: 20vw
+}
+.cart-left>span{
+     font-size: 32px;
+     color: #ccc;
+     float: right;
+     text-align: 15vh;
+     line-height: 15vh;
+}
+.cart-text{
+    flex: 1;
+    font-size: 18px;
+    line-height: 15vh;
+    color:#ccc;
+}
+.cart-right{
+    position: relative;
+}
+a{
+    color: white;
+    background: red;
+    width: 55px;
+    height: 28px;
+    float: left;
+    top: 50%;
+    transform: translate(-80%,-50%);
+    position: absolute;
+    line-height: 28px;
+    border-radius: 5px;
+ 
+}

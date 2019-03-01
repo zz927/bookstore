@@ -1,0 +1,28 @@
+.cart-book-list{
+    margin-top: 20px;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    height: 10vh;
+    line-height: 10vh;
+    position: relative;
+    font-size: 18px;
+}
+span{
+    margin-right: 8px;
+    font-size: 32px;
+    color: #ccc;
+    margin-left: -41px;
+    margin-top: 13px;
+}
+.look{
+    position: absolute;
+    background: red;
+    width: 50px;
+    height: 30px;
+    border: 1px solid red;
+    border-radius: 5px;
+    top: 14vh;
+    right: 6vh;
+    font-size: 18px;
+}

@@ -1,0 +1,30 @@
+.mine-container{
+    margin: 20px 0;
+    padding: 0 10px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background: white;
+}
+.mine-list{
+    font-size: 16px;
+    height: 6vh;
+    line-height: 6vh;
+    color: #999;
+    border-bottom: 1px solid #ccc;
+    overflow: hidden;
+}
+.mine-list:last-child{
+    border-bottom: none;
+}
+.mine-list>p{
+display: inline-block;
+margin: 0px;
+}
+.mine-list span:first-child{
+    float: left;
+    line-height: 6vh;
+    margin-right: 5px;
+}
+.mine-list span{
+ float: right;
+}

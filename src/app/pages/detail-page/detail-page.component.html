@@ -1,0 +1,44 @@
+<app-common-headerb [title]="'图书详情'"></app-common-headerb>
+<div class="page-content">
+  <div class="detail-image">
+    <img src="{{book.image}}" alt="">
+  </div>
+  <div class="detail-book-list">
+    <div class="detail-book-title">
+           <h2>{{book.name}}</h2>
+    </div>
+        <div class="detail-book-content"> 
+          <table>
+            <tbody >
+              <tr>
+                <td>作者:</td>
+                <td>{{book.author}}</td>
+              </tr>
+              <tr>
+                  <td>出版社:</td>
+                  <td>{{book.publisher.name}}</td>
+                </tr>
+                <tr>
+                    <td>图书类别:</td>
+                    <td>{{book.category.name}}</td>
+                  </tr>
+                  <tr>
+                      <td>价格：</td>
+                      <td>{{book.price|currency:'￥'}}</td>
+                    </tr>
+            </tbody>
+          </table>
+        </div>
+  </div>
+  <div class="detail-book-list">
+      <div class="detail-book-title">
+             <h2>简介</h2>
+      </div>
+          <div class="detail-book-content"> 
+          </div>
+    </div>
+</div>
+<div class="page-nav">
+  <div [routerLink]="[ '/order']">我的订单</div>
+  <div [routerLink]="[ '/cart']" routerLinkActive="active">加入购物车</div>
+</div>

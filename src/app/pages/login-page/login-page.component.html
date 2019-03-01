@@ -1,0 +1,18 @@
+<app-common-headerb [title]="'登录'"></app-common-headerb>
+<div class="page-body">
+    <div class="container">
+        <div class="form-group">
+                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                <input type="text"  [(ngModel)]="user.phone" [formControl]="txtphone" class="form-control" placeholder="请输入用户名/号码">
+                <div *ngIf="txtphone.hasError('required')&&txtphone.touched" class="alert alert-danger">手机号码不能为空</div>
+                <div *ngIf="txtphone.hasError('pattern')" class="alert alert-danger">手机号码格式不正确</div>
+        </div>
+        <div class="form-group">
+            <span class="glyphicon glyphicon-lock" aria-hidden="true"></span>
+             <input type="password" [formControl]="txtpassword" [(ngModel)]="user.pwd"  class="form-control" placeholder="请输入密码"> 
+              <div *ngIf="txtpassword.hasError('required')&&txtpassword.touched" class="alert alert-danger">密码不为空</div>
+              <div *ngIf="txtpassword.hasError('pattern')" class="alert alert-danger">密码格式不正确</div>
+         </div>
+        <button (click)="btn_click()"  class="btn btn-default">登录</button> 
+    </div>
+</div>

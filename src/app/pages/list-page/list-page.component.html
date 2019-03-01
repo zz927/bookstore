@@ -1,0 +1,19 @@
+<app-common-header [title]="'商品列表'"></app-common-header>
+<div class="page-content padding-6">
+<div class="list-item-book" *ngFor="let item of books">
+  <div class="book-cover" [routerLink]="[ '/detail', item.id ]">
+    <img src="{{item.image}}" alt="">
+  </div>
+  <div class="book-body">
+    <h4>{{item.name}}</h4>
+    <p>{{item.publisher.name}}</p>
+    <p>{{item.category.name}}</p>
+    <p class="price">{{item.price|currency:'￥'}}</p>
+  </div>
+  <div class="add-cart">
+      <span class="glyphicon glyphicon-shopping-cart" aria-hidden="true" ></span>
+    加入购物车
+  </div>
+</div>
+</div>
+<app-common-nav></app-common-nav>
